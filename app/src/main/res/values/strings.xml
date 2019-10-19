@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kronos</string>
+    <string name="text_email">Insertar Usuario</string>
+    <string name="title_activity_registro_kronos">RegistroKronos</string>
+    <string name="title_activity_agregar_cursos">AgregarCursos</string>
+    <string name="title_activity_cursos">Cursos</string>
+</resources>
