@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Kronos</string>
     <string name="text_email">Insertar Usuario</string>
+    <string name="title_activity_audio">audio</string>
 </resources>
