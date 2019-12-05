@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Audiodio"
+    tools:context=".Audio"
     tools:showIn="@layout/activity_audio">
 
     <Button
@@ -18,7 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_rec"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="reproducir"/>
 
     <Button
         android:id="@+id/btn_rec"
@@ -29,5 +30,6 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_play"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="Recorder"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

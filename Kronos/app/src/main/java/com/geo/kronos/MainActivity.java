@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //attaching listener to button
         btnRegistrar.setOnClickListener(this);
 
+        TextEmail.setText("tigerofmurder@gmail.com");
+        TextPassword.setText("123456");
+
     }
 
     private void registrarUsuario(){
@@ -87,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         if(task.isSuccessful()){
 
                             Toast.makeText(MainActivity.this,"Inicio de Sesion Exitoso: "+ TextEmail.getText(),Toast.LENGTH_LONG).show();
-                            Intent nuevoform= new Intent(MainActivity.this, Audio.class);
+                            Intent nuevoform= new Intent(MainActivity.this, Spinner_.class);
                             startActivity(nuevoform);
                         }else{
 
