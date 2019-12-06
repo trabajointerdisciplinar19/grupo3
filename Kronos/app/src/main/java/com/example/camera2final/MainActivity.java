@@ -35,6 +35,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
     private static final int REQUEST_CAMERA_PERMISSION_RESULT = 0;
     private TextureView mTextureView;
     private TextureView.SurfaceTextureListener mSurfaceTextureListener = new TextureView.SurfaceTextureListener() {
@@ -293,5 +294,4 @@ public class MainActivity extends AppCompatActivity {
             return choices[0];
         }
     }
-
 }
