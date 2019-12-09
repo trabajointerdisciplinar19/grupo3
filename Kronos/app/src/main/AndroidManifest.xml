@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.camera2final">
+    package="com.geo.kronos">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,15 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Cursos"
-            android:label="@string/title_activity_cursos"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Registro" />
-        <activity android:name=".Spinner_" />
-        <activity android:name=".KronosActivityMain" />
-        <activity
             android:name=".Audio"
             android:label="@string/title_activity_audio"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Spinner_" />
+        <activity android:name=".MenuCursos" />
+        <activity android:name=".Camera"/>
+        <activity
+            android:name=".AgregarCursos"
+            android:label="@string/title_activity_agregar_cursos"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>

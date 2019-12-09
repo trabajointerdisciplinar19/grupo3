@@ -21,8 +21,12 @@ public class Spinner_ extends AppCompatActivity {
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
     }
-    public void change_REcord(View v) {
+    public void change_record(View v) {
         Intent intent= new Intent(Spinner_.this,Audio.class);
+        startActivity(intent);
+    }
+    public void change_camera(View v) {
+        Intent intent= new Intent(Spinner_.this,Camera.class);
         startActivity(intent);
     }
 }

@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">Camera2Final</string>
+    <string name="app_name">Kronos</string>
     <string name="camera_button">Camera Shot Button</string>
     <string name="video_button">Video Record Button</string>
-    <string name="title_activity_audio">Audio</string>
+    <string name="text_email">Insertar Usuario</string>
+    <string name="title_activity_registro_kronos">RegistroKronos</string>
+    <string name="title_activity_agregar_cursos">AgregarCursos</string>
+    <string name="title_activity_cursos">Cursos</string>
 
     <string-array name="names">
         <item></item>
@@ -10,9 +13,6 @@
         <item>Foto</item>
         <item>Mostrar Horario</item>
     </string-array>
-
-    <string name="title_activity_spinner_">Spinner_</string>
-    <string name="title_activity_cursos">Cursos</string>
-
-
+    <string name="title_activity_audio">Audio</string>
+    >
 </resources>
