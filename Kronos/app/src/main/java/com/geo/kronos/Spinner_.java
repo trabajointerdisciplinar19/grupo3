@@ -29,4 +29,8 @@ public class Spinner_ extends AppCompatActivity {
         Intent intent= new Intent(Spinner_.this,Camera.class);
         startActivity(intent);
     }
+    public void change_files(View v) {
+        Intent intent= new Intent(Spinner_.this,Explorer.class);
+        startActivity(intent);
+    }
 }
