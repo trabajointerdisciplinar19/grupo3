@@ -10,6 +10,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
@@ -23,6 +24,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -58,6 +61,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextEmail.setText("tigerofmurder@gmail.com");
         TextPassword.setText("123456");
 
+
+        File file = new File(Environment.getExternalStorageDirectory()+"/Kronos");
+        if(!file.exists()){
+            file.mkdirs();
+        }
     }
 
     private void registrarUsuario(){
