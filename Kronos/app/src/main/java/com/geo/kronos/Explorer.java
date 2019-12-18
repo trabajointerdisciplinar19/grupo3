@@ -3,6 +3,9 @@ package com.geo.kronos;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ListActivity;
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
@@ -12,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -97,8 +101,18 @@ public class Explorer extends ListActivity {
         // se cargan los archivos que contiene en el listView
         if (archivo.isFile()) {
             Toast.makeText(this,
-                    "Has seleccionado el archivo: " + archivo.getName(),
+                    "Has seleccionado el archivo: "+listaRutasArchivos.get(position),
                     Toast.LENGTH_LONG).show();
+
+            Intent intent = new Intent();
+            intent.setAction(android.content.Intent.ACTION_VIEW);
+            File file = new File(listaRutasArchivos.get(position));
+            intent.setDataAndType(Uri.fromFile(file), "audio/*");
+            startActivity(intent);
+
+            //Intent intent = new Intent(Intent.ACTION_VIEW_PERMISSION_USAGE,Uri.parse(listaRutasArchivos.get(position)));
+            //startActivity(intent);
+
         } else {
             // Si no es un directorio mostramos todos los archivos que contiene
             verArchivosDirectorio(listaRutasArchivos.get(position));
