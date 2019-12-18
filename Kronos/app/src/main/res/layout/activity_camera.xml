@@ -22,7 +22,8 @@
         android:layout_marginBottom="34dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/camera_icon_foreground" />
+        app:srcCompat="@mipmap/camera_icon_foreground"
+        android:layout_marginLeft="33dp" />
 
     <ImageButton
         android:id="@+id/videoButton2"
